@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
-    <HashRouter basename='/'>
+    <div >
       <Container className="main-container" >
         <Navbar bg="dark" variant="dark" expand="lg" >
           <Container>
@@ -17,7 +17,7 @@ function App() {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto navbar">
                 <Nav.Link as={Link} to="/projects" className="margin-sides">Projects</Nav.Link>
-                <Nav.Link as={Link} to="/" className="margin-sides">About</Nav.Link>
+                <Nav.Link as={Link} to="/about" className="margin-sides">About</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -27,7 +27,7 @@ function App() {
         <Container>
           <Row className="justify-content-md-center">
             <Col xs={12} sm={3} md={3}>
-              <Image src="portrait.jpg" className="margin-top" style={{ height: "210px" }} roundedCircle />
+              <Image src="public\\portrait.jpg" className="margin-top" style={{ height: "210px" }} roundedCircle />
             </Col>
             <Col xs={12} sm={4} md={4}>
               <Card className="margin-top" bg="light" text="dark">
@@ -43,12 +43,13 @@ function App() {
           </Row>
         </Container>
 
-        <Route path="/projects" component={Projects} />
-        <Route path="/" component={About} />
-
+        <Switch>
+          <Route exact path='/about' component={About}></Route>
+          <Route exact path="/projects" component={Projects} />
+        </Switch>
 
       </Container>
-    </HashRouter>
+    </div>
   );
 }
 
