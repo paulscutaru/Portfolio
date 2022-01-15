@@ -16,8 +16,8 @@ function App() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto navbar">
-                <Nav.Link as={Link} to="/projects" className="margin-sides">Projects</Nav.Link>
-                <Nav.Link as={Link} to="/about" className="margin-sides">About</Nav.Link>
+                <Nav.Link href="https://paulscutaru.github.io/Portfolio/#/projects" className="margin-sides">Projects</Nav.Link>
+                <Nav.Link href="https://paulscutaru.github.io/Portfolio/#/about" className="margin-sides">About</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -44,8 +44,7 @@ function App() {
         </Container>
 
         <Switch>
-          <Route exact path="/" component={App}></Route>
-          <Route exact path="/about" component={About}></Route>
+          <Route exact path="/" component={About}/>
           <Route exact path="/projects" component={Projects} />
         </Switch>
 
