@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Link, Switch, Router } from 'react-router-dom';
+import { HashRouter, Route, Link, Switch, Router } from 'react-router-dom';
 import Projects from './Projects.js';
 import About from './About.js';
 import './App.css';
@@ -9,15 +9,15 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter basename='/'>
       <Container className="main-container" >
         <Navbar bg="dark" variant="dark" expand="lg" >
           <Container>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto navbar">
-                <Nav.Link href="projects" className="margin-sides">Projects</Nav.Link>
-                <Nav.Link href="about" className="margin-sides">About</Nav.Link>
+                <Nav.Link as={Link} to="/projects" className="margin-sides">Projects</Nav.Link>
+                <Nav.Link as={Link} to="/" className="margin-sides">About</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -43,14 +43,12 @@ function App() {
           </Row>
         </Container>
 
-        <Switch>
-          <Route path="/projects" component={Projects} />
-          <Route path="/" component={About} />
-        </Switch>
+        <Route path="/projects" component={Projects} />
+        <Route path="/" component={About} />
 
 
       </Container>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
