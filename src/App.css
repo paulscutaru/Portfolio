@@ -1,0 +1,38 @@
+*{
+  font-size: 15px;
+}
+
+.margin-sides{
+  margin-left: 25px;
+  margin-right: 25px
+}
+
+.margin-top{
+  margin-top: 20px;
+}
+
+.margin-bottom{
+  margin-bottom: 20px;
+}
+
+
+.main-container{
+  background-color: #e8eaec;
+  box-shadow: 5px 5px 15px lightgrey;
+}
+
+.project{
+  margin-top: 15px;
+}
+
+.projects,.about-container{
+  text-align: center;
+}
+.about{
+  text-align: left;
+}
+
+.container{
+  padding-right : 0 !important;
+  padding-left : 0 !important;
+ }
