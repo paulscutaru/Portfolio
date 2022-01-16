@@ -2,6 +2,7 @@ import React from 'react';
 import { HashRouter, Route, Link, Switch, Router } from 'react-router-dom';
 import Projects from './Projects.js';
 import About from './About.js';
+import Footer from './Footer'
 import './App.css';
 
 import { Container, Row, Col, Button, Card, Form, Navbar, Nav, NavDropdown, Image } from 'react-bootstrap'
@@ -17,7 +18,7 @@ function App() {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto navbar">
                 <Nav.Link href="https://paulscutaru.github.io/Portfolio/#/projects" className="margin-sides">Projects</Nav.Link>
-                <Nav.Link href="https://paulscutaru.github.io/Portfolio/#/about" className="margin-sides">About</Nav.Link>
+                <Nav.Link href="https://paulscutaru.github.io/Portfolio/#/" className="margin-sides">About</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -27,7 +28,7 @@ function App() {
         <Container>
           <Row className="justify-content-md-center">
             <Col xs={12} sm={3} md={3}>
-              <Image src="public\\portrait.jpg" className="margin-top" style={{ height: "210px" }} roundedCircle />
+              <Image src="portrait.jpg" className="margin-top" style={{ height: "190px" }} roundedCircle />
             </Col>
             <Col xs={12} sm={4} md={4}>
               <Card className="margin-top" bg="light" text="dark">
@@ -48,6 +49,7 @@ function App() {
           <Route exact path="/projects" component={Projects} />
         </Switch>
 
+        <Footer/>
       </Container>
     </div>
   );
