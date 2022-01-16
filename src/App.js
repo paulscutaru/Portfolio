@@ -28,7 +28,7 @@ function App() {
         <Container>
           <Row className="justify-content-md-center">
             <Col xs={12} sm={3} md={3}>
-              <Image src="portrait.jpg" className="margin-top" style={{ height: "190px" }} roundedCircle />
+              <Image src="portrait.jpg" className="margin-top" style={{ height: "200px" }} roundedCircle />
             </Col>
             <Col xs={12} sm={4} md={4}>
               <Card className="margin-top" bg="light" text="dark">
