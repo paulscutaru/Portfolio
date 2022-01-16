@@ -10,8 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
-    <div >
-      <Container className="main-container" >
+      <Container fluid className="main-container" >
         <Navbar bg="dark" variant="dark" expand="lg" >
           <Container>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -51,7 +50,6 @@ function App() {
 
         <Footer/>
       </Container>
-    </div>
   );
 }
 

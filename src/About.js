@@ -8,7 +8,7 @@ function About(props) {
     <Container className="about-container margin-top margin-bottom">
       <h4>About</h4>
       <Row className="justify-content-md-center">
-        <Col xs={12} sm={6} md={5}>
+        <Col xs={12} sm={6} md={6}>
           <Card className="about margin-bottom" bg="dark" text="light">
             <Card.Body>
               <Card.Text>I've always been passionate about expanding my general knowledge and

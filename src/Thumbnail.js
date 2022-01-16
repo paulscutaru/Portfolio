@@ -6,7 +6,7 @@ function Thumbnail(props) {
     return (
         <Container>
             <Row className="justify-content-md-center">
-                <Col xs={12} sm={6} md={6}>
+                <Col xs={12} sm={6} md={7}>
                     <Card bg="dark" text="light" className="project">
                         <Card.Body>
                             <Card.Title>{props.title}</Card.Title>
