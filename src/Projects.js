@@ -2,7 +2,7 @@ import React from 'react';
 import Thumbnail from './Thumbnail.js';
 import './App.css';
 
-import { Container, Row, Col, Button, Card } from 'react-bootstrap'
+import { Container} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function Projects(props) {

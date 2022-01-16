@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Container, Row, Col, Button, Card, Form } from 'react-bootstrap'
+import { Container, Row, Col, Card} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function About(props) {

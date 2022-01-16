@@ -1,11 +1,11 @@
 import React from 'react';
-import { HashRouter, Route, Link, Switch, Router } from 'react-router-dom';
+import {Route, Switch } from 'react-router-dom';
 import Projects from './Projects.js';
 import About from './About.js';
 import Footer from './Footer'
 import './App.css';
 
-import { Container, Row, Col, Button, Card, Form, Navbar, Nav, NavDropdown, Image } from 'react-bootstrap'
+import { Container, Row, Col, Card, Navbar, Nav, Image } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
