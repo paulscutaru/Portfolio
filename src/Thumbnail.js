@@ -14,7 +14,7 @@ function Thumbnail(props) {
                             <Card.Text>{props.description}</Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <a target="_blank" href={props.link}>{props.link}</a>
+                            <a target="_blank" rel="noreferrer" href={props.link}>{props.link}</a>
                         </Card.Footer>
                     </Card>
                 </Col>

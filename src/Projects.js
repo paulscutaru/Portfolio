@@ -2,7 +2,7 @@ import React from 'react';
 import Thumbnail from './Thumbnail.js';
 import './App.css';
 
-import { Container} from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function Projects(props) {
@@ -25,6 +25,12 @@ function Projects(props) {
         description="A website for keeping and visualizing an inventory of plants, with photos,
       details and categories. It offers features of filtering, changing and adding
       plants. Written in PHP, Javascript, HTML/CSS with MySQL."
+      />
+      <Thumbnail
+        link="https://paulscutaru.github.io/explominer-2d/"
+        image="explominer-2d.png"
+        title="Explominer 2D"
+        description="A small game made with React.js and React boostrap."
       />
       <Thumbnail
         link="https://github.com/Elaech/A7-IP"

@@ -16,8 +16,8 @@ function App() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto navbar">
-                <Nav.Link href="https://paulscutaru.github.io/Portfolio/#/projects" className="margin-sides">Projects</Nav.Link>
-                <Nav.Link href="https://paulscutaru.github.io/Portfolio/#/" className="margin-sides">About</Nav.Link>
+                <Nav.Link href="https://paulscutaru.github.io/Portfolio/#/" className="margin-sides">Projects</Nav.Link>
+                <Nav.Link href="https://paulscutaru.github.io/Portfolio/#/about" className="margin-sides">About</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -36,7 +36,7 @@ function App() {
                   <Card.Text>I am a 22 years old graduate passionate about Web technologies.</Card.Text>
                   <Card.Text>Contact:</Card.Text>
                   <Card.Text>• paulscutaru99@gmail.com</Card.Text>
-                  <Card.Text>• <a target="_blank" href="https://www.linkedin.com/in/paul-alexandru-scutaru-301044221/">LinkedIn</a></Card.Text>
+                  <Card.Text>• <a target="_blank" href="https://www.linkedin.com/in/paul-alexandru-scutaru-301044221/" rel="noreferrer">LinkedIn</a></Card.Text>
                 </Card.Body>
               </Card>
             </Col>
@@ -44,8 +44,8 @@ function App() {
         </Container>
 
         <Switch>
-          <Route exact path="/" component={About}/>
-          <Route exact path="/projects" component={Projects} />
+          <Route exact path="/about" component={About}/>
+          <Route exact path="/" component={Projects} />
         </Switch>
 
         <Footer/>
