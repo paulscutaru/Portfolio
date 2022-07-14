@@ -27,13 +27,13 @@ function App() {
         <Container>
           <Row className="justify-content-md-center">
             <Col xs={12} sm={3} md={3}>
-              <Image src="portrait.jpg" className="margin-top" style={{ height: "200px" }} roundedCircle />
+              <Image src="portrait.jpg" className="portrait-img margin-top" roundedCircle />
             </Col>
             <Col xs={12} sm={4} md={4}>
               <Card className="margin-top" bg="light" text="dark">
                 <Card.Body>
                   <Card.Title>Scutaru Paul-Alexandru.</Card.Title>
-                  <Card.Text>I am a 22 years old graduate passionate about Web technologies.</Card.Text>
+                  <Card.Text>I am a 23 years old graduate passionate about Web technologies.</Card.Text>
                   <Card.Text>Contact:</Card.Text>
                   <Card.Text>• paulscutaru99@gmail.com</Card.Text>
                   <Card.Text>• <a target="_blank" href="https://www.linkedin.com/in/paul-alexandru-scutaru-301044221/" rel="noreferrer">LinkedIn</a></Card.Text>

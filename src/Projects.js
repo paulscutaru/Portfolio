@@ -6,6 +6,8 @@ import { Container } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function Projects(props) {
+  window.scroll(0,300)
+
   return (
     <Container className="projects margin-top" >
       <h4>Projects</h4>
@@ -30,7 +32,7 @@ function Projects(props) {
         link="https://paulscutaru.github.io/explominer-2d/"
         image="explominer-2d.png"
         title="Explominer 2D"
-        description="A small game made with React.js and React boostrap."
+        description="A small game made with React.js and React boostrap. Supports both desktop and mobile."
       />
       <Thumbnail
         link="https://github.com/Elaech/A7-IP"

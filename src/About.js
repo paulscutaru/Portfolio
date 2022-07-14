@@ -4,6 +4,8 @@ import { Container, Row, Col, Card} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function About(props) {
+  window.scroll(0,300)
+
   return (
     <Container className="about-container margin-top margin-bottom">
       <h4>About</h4>
@@ -15,7 +17,6 @@ function About(props) {
                 learning science. Thus, I chose a career in computer science because you can combine it with any domain, you can make an app about anything.</Card.Text>
               <Card.Text>I enjoy making little programs in my free time, like simple algorithms or testing things out, watching computers science videos and reading articles.</Card.Text>
               <Card.Text>Some of my interests also include cybersecurity and cryptography.</Card.Text>
-              <Card.Footer>Also, I make music as a hobby and post it on YouTube.</Card.Footer>
             </Card.Body>
           </Card>
           <Card className="about margin-bottom" bg="dark" text="light">

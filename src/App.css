@@ -53,3 +53,14 @@
   border: none;
   width: 60px;
 }
+
+.portrait-img {
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row{
+  margin-right: 0;
+}
