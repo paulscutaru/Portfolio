@@ -21,7 +21,7 @@ function Projects(props) {
         with Express.js, Node.js, React.js, Tone.js, MySQL."
       />
       <Thumbnail
-        link="www.github.com/paulscutaru/Plant-Web-Organizer"
+        link="-"
         image="plantsweborganizer.png"
         title="Plants Web Organizer"
         description="A website for keeping and visualizing an inventory of plants, with photos,
